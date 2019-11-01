@@ -1,34 +1,188 @@
 <!DOCTYPE html>
-
-<!-- This is a comment. It allows us tot take notes in the doc.
-This text will not appear on the website
--->
-<html>
-
-    <head>
-    <title>Website</title>
-    </head>
+<html lang="">
+<head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
     
+    .circles-container{
+        width: 100%;
+        height: 100%;
+        position: relative;
+        overflow: hidden;
+        top: 0;
+        left: 0;
+        background: linear-gradient(90deg, #1CB5E0 0%, #000851 100%);
+    }
+    
+    .main-container{
+        
+        width: 100%;
+        height: 100vh;
+    }
+    
+    li{
+        position: absolute;
+        display: block;
+        list-style: none;
+        width: 20px;
+        height: 20px;
+        background-color: lightcyan;
+        bottom: -150px;
+        
+        animation-name: bubble;
+        animation-duration: 25s;
+        animation-direction: normal;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+    }
+    
+    @keyframes bubble{
+        0%{
+            transform: translateY(0) rotate(0deg);
+            opacity: 0.8;
+            border-radius: 0;
+        }
+        
+        100%{
+            transform: translateY(-1000px) rotate(720deg);
+            opacity: 0;
+            border-radius: 100%;
+        }
+    }
+    
+    .circle1{
+        left: 40%;
+        width: 80px;
+        height: 80px;
+        
+        animation-delay: 2s;
+    }
+    
+    .circle2{
+        left: 60%;
+        width: 97px;
+        height: 80px;
+        
+        animation-delay: 1s;
+    }
+    
+    .circle3{
+        left: 15%;
+        width: 87px;
+        height: 75px;
+        
+        animation-delay: 9s;
+    }
+    
+    .circle4{
+        left: 25%;
+        width: 32px;
+        height: 27px;
+        
+        animation-delay: 3s;
+    }
+    
+    .circle5{
+        left: 69%;
+        width: 100px;
+        height: 80px;
+        
+        animation-delay: 5s;
+    }
+    
+    .circle6{
+        left: 95%;
+        width: 56px;
+        height: 34px;
+        
+        animation-delay: 8s;
+    }
+    
+    .circle7{
+        left: 75%;
+        width: 74px;
+        height: 50px;
+        
+        animation-delay: 6s;
+    }
+    
+    .circle8{
+        left: 9%;
+        width: 98px;
+        height: 83px;
+        
+        animation-delay: 4s;
+    }
+    
+    .circle9{
+        left: 1%;
+        width: 80px;
+        height: 80px;
+        
+        animation-delay: 6s;
+    }
+    
+    .content-card{
+        height: 300px;
+        width: 300px;
+        margin-left: auto;
+        margin-right: auto;
+        padding: inherit;
+        background-color: dimgrey;
+    }
+    
+    .content-card:hover{
+        -ms-transition: all 1s ease-in;
+        -webkit-transition: all 1s ease-in;
+        -moz-transition: all 1s ease-in;
+        -o-transition: all 1s ease-in;
+        
+        -ms-transform: scale(1.1);
+        -moz-transform: scale(1.1);
+        -webkit-transform: scale(1.1);
+        -o-transform: scale(1.1);
+    }
+    
+    .box-shadow{
+        box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    }
+    
+    
+</style>
+</head>
+
 <body>
-     <a href="../index.html"><img style="width: 300 px;" src="Images/lab4-1.gif"></a> 
-    <a href="GimpPages/Gimp%201.html"><img style="width: 300 px;" src="Images/lesson%201%20logo.png" width="300 px"></a> 
-    <p>
-    </p>
     
-    This is a website to use as a portfolio for web tech.
+<div class="main-container">
     
+<ul class="circles-container">
     
-        <div>
+
+<li class="circle1"></li>
+<li class="circle2"></li>
+<li class="circle3"></li>
+<li class="circle4"></li>
+<li class="circle5"></li>
+<li class="circle6"></li>
+<li class="circle7"></li>
+<li class="circle8"></li>    
+<li class="circle9"></li>
     
-     <h1>HTML Labs</h1>
-     <a href="HTMLPages/Guided1.html">Guided 1</a>       
+
+
+</ul>
     
-            
-            
-    </div>
+</div>
     
-   
-     </body>
+<div class="content-card">
+<img src="abstract.png">
+
+<div class="context-text"></div>
     
+</div>
     
+</body>
 </html>
